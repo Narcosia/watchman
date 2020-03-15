@@ -2,7 +2,7 @@ watchman -j <<-EOT
 ["trigger", "/tmp", {
   "name": "scanner",
   "expression": ["allof", ["match", "*"], ["exists"]],
-  "command": ["/usr/local/sbin/monitor.sh"],
+  "command": ["/usr/local/sbin/hax0r_alert.sh"],
   "append_files": true,
   "fields": ["name", "size"]
 }]
